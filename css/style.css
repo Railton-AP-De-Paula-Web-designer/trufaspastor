@@ -1,0 +1,141 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e0b0ff
+}
+
+.cabecalho nav {
+    position: fixed;
+    top: 0;
+    padding: 10px;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 255, 255, 0.1), rgba(0, 0, 0, 0.3));
+    border-bottom: 1px solid rgba(0,255, 255, 0.3);
+}
+
+.cabecalho nav ul {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.cabecalho nav ul li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.cabecalho nav ul li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo-nav {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    transform: scaleX(3px);
+}
+
+.video-banner {
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+.video-media {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+.titulo-principal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    text-align: center;
+    width: 90%;
+}
+
+.titulo-principal h1 {
+    font-size: clamp(3rem, 10vw, 7rem);
+    font-family: 'georgia', sans-serif;
+    color: white;
+    letter-spacing: 5px;
+
+    /*EFEITO 3D*/
+text-shadow: 2px 2px 0 #4a148c,
+4px 4px 0 #ec407a,
+6px 6px 0 #1a1a1a,
+8px 8px 10px rgba(0, 0, 0, 0.7);
+}
+
+/*tres linhas em branco*/
+.container-principal {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.secao-introducao {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+.secao-introducao h2 {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    color: #6a5acd;
+    margin-bottom: 15px;
+    font-family: 'georgia', sans-serif;
+}
+
+.secao-introducao p {
+    font-size: 1.1rem;
+    color: #444;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+}
+
+.botao-cta {
+    background-color: #ec407a;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.botao-cta:hover {
+    background-color: #d81b60;
+    transform: translateY(-2px);
+}
