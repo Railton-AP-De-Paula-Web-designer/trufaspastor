@@ -139,3 +139,31 @@ text-shadow: 2px 2px 0 #4a148c,
     background-color: #d81b60;
     transform: translateY(-2px);
 }
+
+.secao-card-trufa {
+    padding: 40px 0;
+}
+.card-trufa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+
+    position: relative;
+    max-width: 100%;
+    height: 1000px;
+    margin: 40px auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    color: white;
+}
+
+#card-brigadeiro {
+    /*aplicação do fundo brigadeiro*/
+        background-image: url('../image/image_choco.png'); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+}
