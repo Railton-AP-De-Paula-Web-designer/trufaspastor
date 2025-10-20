@@ -122,48 +122,102 @@ text-shadow: 2px 2px 0 #4a148c,
     line-height: 1.6;
 }
 
-.botao-cta {
-    background-color: #ec407a;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+.container-principal-produtos {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
 }
 
-.botao-cta:hover {
-    background-color: #d81b60;
-    transform: translateY(-2px);
+.produtos-titulo {
+    text-align: center;
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: #8b2e34;
+    font-family: 'georgia', sans-serif;
+    margin-bottom: 40px;
 }
 
-.secao-card-trufa {
-    padding: 40px 0;
-}
-.card-trufa {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-between;
-
+.carousel-container {
     position: relative;
-    max-width: 100%;
-    height: 1000px;
-    margin: 40px auto;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    padding: 0 40px;
+}
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.image-trufa {
+    width: 150px;
+}
+
+.card-produto {
+    background-color: #ffffff;
+    border-radius: 8px;
     overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-imagem-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    overflow: hidden;
+}
+
+.card-imagem-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.badge-preco {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 5;
+    background-color: #d85b63;
     color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.card-info {
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
 }
 
-#card-brigadeiro {
-    /*aplicação do fundo brigadeiro*/
-        background-image: url('../image/image_choco.png'); 
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
+.card-info h3 {
+    font-size: 1.5rem;
+    color: #8b2e34;
+    margin-bottom: 8px;
+    font-family: 'georgia', sans-serif;
+}
+
+.microcopy {
+    font-size: 0.95rem;
+    color: #8c8c8c;
+    line-height: 1.4;
 
 }
+
+
+
