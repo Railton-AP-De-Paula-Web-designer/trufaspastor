@@ -42,12 +42,20 @@ body {
     display: flex;
     align-items: center;
     gap: 5px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.cabecalho nav ul li a:hover {
+    color: #d85b63;
 }
 
 .logo-nav {
     width: 20px;
     height: 20px;
-    margin-left: 5px;
+    margin-right: 5px;
     transform: scaleX(3px);
 }
 
@@ -176,10 +184,10 @@ text-shadow: 2px 2px 0 #4a148c,
 
 .card-imagem-container img {
     position: absolute;
-    top: 0;
+    top: 50px;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 80%;
     object-fit: cover;
 }
 
