@@ -529,6 +529,19 @@ box-shadow: 0 15px 30px rgba(139, 46, 52, 0.6), 0 5px 10px rgba(0, 0, 0, 0.2);
         min-width: 85%;
         scroll-snap-align: start;
     }
+    .badge-preco {
+        width: 60px;
+        height: 60px;
+        font-size: 1rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        top: 5px;
+        right: 5px;
+    }
     .carousel-nav {
         width: 35px;
         height: 35px;
